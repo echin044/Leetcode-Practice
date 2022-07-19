@@ -59,6 +59,8 @@ class Solution {
                    break;
             }
                     
+                    //if next numeral is greater in value then it denotes a substraction
+                    //either adds or substracts numeral value to the sum
                     if(value < value2){
                         sum -= value;
                     }

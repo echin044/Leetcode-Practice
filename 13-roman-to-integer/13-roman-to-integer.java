@@ -3,9 +3,7 @@ class Solution {
         int sum = 0;
         for(int i = 0; i<s.length();i++){
             
-            
-            
-            //gets numeric value associated to roman numerals, for current numeral and then next one
+            //gets numeric value associated to roman numerals, for current character and then next one
             int value = 0;
             switch(s.charAt(i)){
                case 'I':

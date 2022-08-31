@@ -9,10 +9,7 @@ class Solution {
         
         int start = 0;
         int end = nums.length - 1;
-        for(int i = 0; i< nums.length; i++){
-            
-            System.out.println(start + " : " + end);
-            
+        for(int i = 0; i< nums.length; i++){        
             if(end == start + 1){
                 if(nums[start] < target){
                     return end;
@@ -23,16 +20,13 @@ class Solution {
             
             
             if(nums[(start + end)/2] == target){
-                System.out.println("found");
                 return (start + end)/2;
             }
             if(nums[(start + end)/2] > target){
                 end = (start + end)/2;
-                System.out.println("bigger");
             }
             if(nums[(start + end)/2] < target){
                  start = (start + end)/2;
-                System.out.println("smaller");
             }
         }
         return -1;

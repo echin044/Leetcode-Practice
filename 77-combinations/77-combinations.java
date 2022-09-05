@@ -6,17 +6,18 @@ class Solution {
         permute(n, 0,k,al);
         return result;
     }
-    public void permute(int n, int index,int k,ArrayList<Integer> curr){
+    public void permute(int n, int index,int k,ArrayList<Integer> current){
         //when combination is at k numbers, add it to list of lists
-        if(curr.size() == k){
-            result.add(new ArrayList<>(curr));
+        if(current.size() == k){
+            result.add(new ArrayList<>(current));
             return;
         }
         
+        //
         for(int i = index ; i < n; i ++){
-            curr.add(i+1);
-            permute(n, i+1,k,curr);
-            curr.remove(curr.size()-1);
+            current.add(i+1);
+            permute(n, i+1,k,current);
+            current.remove(current.size()-1);
         }
     }
 }

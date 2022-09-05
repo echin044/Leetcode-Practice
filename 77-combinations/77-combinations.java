@@ -14,7 +14,7 @@ class Solution {
         }
         
         //iteratively looks at combinations starting with n
-        //recursively 
+        //recursively finds all combinations starting with n
         for(int i = index ; i < n; i ++){
             current.add(i+1);
             permute(n, i+1,k,current);

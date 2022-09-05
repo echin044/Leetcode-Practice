@@ -24,7 +24,6 @@ class Solution {
         
         Queue<TreeNode> q = new LinkedList<>();
         q.add(root);
-        boolean direction = false;
         int left = 0;
         
         //iterate through each level
@@ -38,9 +37,9 @@ class Solution {
                 TreeNode node = q.poll();
                 if(node != null){
                     if(node.val != -101){
-                    if(left%2 == 0)
-                        level.add(node.val); 
-                    else level.add(0,node.val);
+                        if(left%2 == 0)
+                            level.add(node.val); 
+                        else level.add(0,node.val);
                 } 
                 
                 if(node.left != null)

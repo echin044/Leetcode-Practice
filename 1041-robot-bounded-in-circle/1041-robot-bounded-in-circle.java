@@ -58,7 +58,6 @@ class Solution {
         }
             
         }
-        System.out.println(positionX + " " + positionY);
     return positionX == 0 & positionY == 0;
     }
 }

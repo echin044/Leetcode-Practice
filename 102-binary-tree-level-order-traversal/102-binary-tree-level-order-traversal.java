@@ -32,10 +32,11 @@ class Solution {
             List<Integer> level = new ArrayList<>();
             
             int qSize = q.size();
+            //add right and left vals, then add children to the queue for next iteration
             for(int i = 0; i<qSize; i++){
                 TreeNode node = q.remove();
-                
                 level.add(node.val);
+                
                 if(node.left!=null)
                 q.add(node.left);
                 if(node.right!=null)

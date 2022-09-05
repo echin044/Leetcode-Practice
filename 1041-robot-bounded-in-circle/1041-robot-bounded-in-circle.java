@@ -54,7 +54,6 @@ class Solution {
                     }
                     break;
             }
-            System.out.println(leftDir + " " + topDir);
         }
             
         }

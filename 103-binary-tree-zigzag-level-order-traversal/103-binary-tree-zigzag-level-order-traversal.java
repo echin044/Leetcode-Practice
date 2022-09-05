@@ -22,7 +22,6 @@ class Solution {
             return result;
         }
         
-        
         Queue<TreeNode> q = new LinkedList<>();
         q.add(root);
         boolean direction = false;

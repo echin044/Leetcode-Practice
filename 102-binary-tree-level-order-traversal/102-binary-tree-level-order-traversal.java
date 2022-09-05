@@ -32,7 +32,6 @@ class Solution {
                     level.add(node.val);
                     q.add(node.left);
                     q.add(node.right);
-                    
                 }
             }
             if(level.size()!=0)

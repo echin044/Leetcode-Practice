@@ -43,6 +43,7 @@ class Solution {
                 q.add(node.right);
                 
             }
+            
             result.add(level);
         }
         

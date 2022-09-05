@@ -30,7 +30,7 @@ class Solution {
                         leftDir = 1;
                         topDir = 0;
                     }
-                    else if(leftDir==-1&topDir==0){
+                    else{
                         leftDir = 0;
                         topDir = -1;
                     }
@@ -48,7 +48,7 @@ class Solution {
                         leftDir = -1;
                         topDir = 0;
                     }
-                    else if(leftDir==-1&topDir==0){
+                    else{
                         leftDir = 0;
                         topDir = 1;
                     }
@@ -56,7 +56,6 @@ class Solution {
             }
             System.out.println(leftDir + " " + topDir);
         }
-            
             
         }
         System.out.println(positionX + " " + positionY);

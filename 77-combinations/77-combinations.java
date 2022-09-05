@@ -16,7 +16,7 @@ class Solution {
             return;
         }
         for(int i = index ; i < nums.length; i ++){
-            curr.add(nums[i]);
+            curr.add(i+1);
             permute(nums,i+1,k,curr);
             curr.remove(curr.size()-1);
         }
